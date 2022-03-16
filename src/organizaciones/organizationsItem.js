@@ -7,8 +7,9 @@ export default function OrganizationsItem({ organizations }) {
 
             <tbody>
               <tr>
-              <td>{organizations.id}</td>
+              <td>{organizations.company_id}</td>
               <td>{organizations.name}</td>
+              <td>{organizations.people_count}</td>
               </tr>
             </tbody>
 

@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import PersonasList from './personas/personsList';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import OrganizationsList from './organizaciones/organizationsList';
 function App() {
   return (
     <div className="App">
@@ -18,10 +18,10 @@ function App() {
         </nav>
         <Routes>
           <Route path="/personas" exact element={<PersonasList/>}/>
-          <Route path="/organizaciones" exact element={<PersonasList/>}/>
+          <Route path="/organizaciones" exact element={<OrganizationsList/>}/>
         </Routes>
       </BrowserRouter>
-      <p>HOla</p>
+      
     </div>
   );
 }
